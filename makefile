@@ -2,21 +2,25 @@ CC := gcc
 CFLAGS := -Wall -Wextra -Werror -std=c11 -O2
 
 TARGET := build/memory_simulator
-SRCS := $(wildcard *.c)
-OBJS := $(SRCS:.c=.o)
+SRCS := $(wildcard main.c src/*.c)
+OBJS := $(SRCS:%.c=obj/%.o)
 
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re dirs
 
-all: $(TARGET)
+all: dirs $(TARGET)
+
+dirs:
+	mkdir -p build obj
 
 $(TARGET): $(OBJS)
 	$(CC) $(CFLAGS) $(OBJS) -o $@
 
-%.o: %.c
+obj/%.o: %.c
+	mkdir -p $(dir $@)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJS)
+	rm -rf obj
 
 fclean: clean
 	rm -f $(TARGET)
