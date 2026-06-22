@@ -24,6 +24,11 @@
  */
 
 #include <stdio.h>
+// read input jobs
+void read_input_jobs() {
+    // Implementation to read input jobs
+}
+
 
 int main() {
     printf("Hello, World!\n");
