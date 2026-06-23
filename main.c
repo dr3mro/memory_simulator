@@ -9,18 +9,18 @@
  * 4. Track job start, sleep/end state, and deallocation.
  * 5. Print the memory state after each interval.
  * --------------- Plan ----------------
- * Read input jobs
- * Initialize memory state
- * For each time tick:
- * add arriving jobs
- * choose allocation strategy
- * allocate memory if space exists
- * update running jobs
- * deallocate finished jobs
- * handle sleeping jobs
- * Repeat until all jobs are done
- * Print final memory state
- * Compare first-fit, best-fit, and worst-fit results
+ * [x] Read input jobs
+ * [ ] Initialize memory state
+ * [ ] For each time tick:
+ * [ ] add arriving jobs
+ * [ ] choose allocation strategy
+ * [ ] allocate memory if space exists
+ * [ ] update running jobs
+ * [ ] deallocate finished jobs
+ * [ ] handle sleeping jobs
+ * [ ] Repeat until all jobs are done
+ * [ ] Print final memory state
+ * [ ] Compare first-fit, best-fit, and worst-fit results
  */
 
 #include <stdio.h>
