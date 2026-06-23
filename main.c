@@ -24,10 +24,7 @@
  */
 
 #include <stdio.h>
-// read input jobs
-void read_input_jobs() {
-    // Implementation to read input jobs
-}
+#include "src/read_jobs.h"
 
 
 int main() {
