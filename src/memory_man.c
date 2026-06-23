@@ -1,4 +1,4 @@
-#include "data_types.h"
+#include "memory_man.h"
 
 void memory_manager(MemoryState* memory_state) {
     // Initialize the memory state with 20 KB of memory and 1 KB pages

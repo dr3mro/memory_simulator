@@ -1,7 +1,7 @@
 #ifndef MEMORY_MAN_H
 #define MEMORY_MAN_H
 
-#include "data_types.h"
+#include "mem.h"
 
 void memory_manager(MemoryState* memory_state);
 

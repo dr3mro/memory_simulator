@@ -1,6 +1,6 @@
-#if !defined(JOB_MAN_H)
+#ifndef JOB_MAN_H
 #define JOB_MAN_H
-#include "data_types.h"
+#include "job.h"
 
 void load_jobs(Job* jobs1, Job* jobs2);
 

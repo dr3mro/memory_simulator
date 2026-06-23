@@ -25,7 +25,7 @@
 #include <stdlib.h>
 #include "job_man.h"
 #include "memory_man.h"
-#include "data_types.h"
+#include "job.h"
 #define MAX_JOBS 100
 
 int main() {
