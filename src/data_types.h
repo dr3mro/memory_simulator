@@ -9,4 +9,11 @@ typedef struct {
 	char job_state[16];
 } Job;
 
+typedef struct {
+	int total_memory;
+	int page_size;
+	int pages;
+} MemoryState;
+
 #endif
+

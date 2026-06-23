@@ -10,7 +10,7 @@
  * 5. Print the memory state after each interval.
  * --------------- Plan ----------------
  * [x] Read input jobs
- * [ ] Initialize memory state
+ * [x] Initialize memory state
  * [ ] For each time tick:
  * [ ] add arriving jobs
  * [ ] choose allocation strategy
@@ -22,13 +22,23 @@
  * [ ] Print final memory state
  * [ ] Compare first-fit, best-fit, and worst-fit results
  */
+#include <stdlib.h>
 #include "job_man.h"
+#include "memory_man.h"
 #include "data_types.h"
 #define MAX_JOBS 100
 
 int main() {
+
+    // Initialize the job arrays
     Job jobs1[MAX_JOBS];
     Job jobs2[MAX_JOBS];
     load_jobs(jobs1, jobs2);
+    ///////////////////////////////
+    // Initialize the memory state
+    MemoryState memory_state ;
+    memory_manager(&memory_state);
+    ///////////////////////////////
+
     return 0;
 }
