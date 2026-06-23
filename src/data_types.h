@@ -14,7 +14,6 @@ typedef struct {
     char job_state[16];  // "End" or "Sleep"
     int allocated;       // 1 if in memory, 0 otherwise
     int end_time;        // When job completes
-    int remaining_time;  // Time left in current interval
 } Job;
 
 // Memory page structure
