@@ -22,6 +22,7 @@ obj/%.o: %.c
 
 clean:
 	rm -rf obj
+	rm -f $(TARGET)
 
 fclean: clean
 	rm -f $(TARGET)
