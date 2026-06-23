@@ -1,7 +1,7 @@
 #ifndef PRINT_JOBS_H
 #define PRINT_JOBS_H
 
-#include "job.h"
+#include "data_types.h"
 
 void print_jobs(const Job *jobs, unsigned int jobs_count);
 
