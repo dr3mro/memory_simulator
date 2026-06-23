@@ -1,1 +1,0 @@
-void read_input_jobs(job[] jobs, char* filename);

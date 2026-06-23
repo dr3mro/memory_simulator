@@ -1,5 +1,6 @@
 CC := gcc
 CFLAGS := -Wall -Wextra -Werror -std=c11 -O2
+CPPFLAGS := -Isrc
 
 TARGET := build/memory_simulator
 SRCS := $(wildcard main.c src/*.c)
@@ -17,7 +18,7 @@ $(TARGET): $(OBJS)
 
 obj/%.o: %.c
 	mkdir -p $(dir $@)
-	$(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CPPFLAGS) $(CFLAGS) -c $< -o $@
 
 clean:
 	rm -rf obj
